@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let marks={ electronics:80, softskills:85, calculus:90, mechanical:95, designthinking:88};
+        console.log(marks);
+        let total = marks.electronics + marks.softskills + marks.calculus + marks.mechanical + marks.designthinking ;
+        console.log("Total marks: " + total);
+
+        let average = total/5;
+        console.log("Avg. marks: " + average);
+        for(let avg in marks)
+        {
+            console.log(avg + ": " + marks[avg]);
+        }
+        let marks2=[65,34,78,90,56];
+    </script>
+
+</body>
+</html>

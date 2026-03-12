@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in JS</title>
+</head>
+<body>
+    <script>
+        //loops : used to repeadetly run a block of code until a specific condition is met .
+        
+        let friendslist = ["anav", "garv", "harsh", "manjul", "pranjal"]
+        
+        for(let i = 0; i < friendslist.length; i++)
+        {
+            console.log(friendslist[i]);
+        }
+
+        //while loop
+        let x = 0;
+        while(x < friendslist.length)
+        {
+            console.log(friendslist[x]);
+            x++;
+        }
+
+        // for ...of loop
+        //arrays ,strings,maps,and sets 
+        for(let y of friendslist)
+        {
+            console.log(y);
+        }
+    </script>
+</body>
+</html>

@@ -152,6 +152,47 @@ mypromise.then(result=>console.log(result))
 }
 
 userdata(); // ← THIS WAS MISSING
+  
+let num=[1,2,3,4,5];
+let square=num.map((x)=>x*x);
+console.log(square);
+
+//reduce:- the reduce fucntion accumulates array elements into a single value based on a provided reducer functionn.
+  let sum =num.reduce((accumulator,currentValue)=>accumulator+currentValue,0);
+  console.log(sum);
+
+
+        let userinfo={
+            name:"Vikas",
+            age:23,
+            city:"Agra"
+        };
+
+        for(let key in userinfo){
+            console.log(`${key} : ${userinfo[key]}`);
+        }
+
+        localStorage.setItem("username","Vikas");
+        console.log(localStorage.getItem("username"))
+
+        let studentMarks=[23,56,78,90,45];
+        let highMarks=studentMarks.filter((mark)=>mark>=50);        
+        console.log(highMarks);
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  </script>
 </body>
 </html>

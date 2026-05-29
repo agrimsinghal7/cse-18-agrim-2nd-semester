@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>Java script</h1>
+     <script>
+        //var declaration 
+        var myName = "Agrim Singhal"; //string  ,global attach with window object
+        document.write(myName); //it shows the output on the webpage
+        console.log(myName); //it shows the output in the console 
+
+        //JS execution (gloabl and local (block) scope)
+        function hello(){
+            var myNum = "1234"; //local or block level variable
+            console.log(myNum);
+        }
+        hello();
+
+         //from ES6 .. Let and const 
+         //while var is function scope, let and const are block scope
+         let msg = "Hello World"; //block level variable
+         console.log(msg);
+         document.write(msg);  //optional to show on webpage
+
+         const msg2 = "i'm learning JS"; //constant variable (block level)  
+            console.log(msg2);
+
+     </script>
+</body>
+</html>

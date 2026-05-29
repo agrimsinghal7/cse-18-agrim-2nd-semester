@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Document</title>
 </head>
 <body>
@@ -95,6 +96,128 @@ function myCal(){
 }
 myCal(); //function calling
 
+=======
+    <title>Javascript </title>
+</head>
+<body>
+        <img src="https://read.learnyard.com/content/images/2024/07/logo.png" alt="krishna ji  image" width="700px" height="600px">
+        ,
+    <script>
+        //JS variable data type values 
+
+        // primitive: immutable single value and stores in memory 
+
+        // string ==
+        var myName="Agrim Singhal";
+        console.log("my name is "+myName)
+      
+        //number ==
+        var myMob=9876543210;
+        console.log("my mobile number is "+myMob);
+        console.log(typeof(myMob)); //to check the data type of variable
+     
+        //boolean ==
+        var ismarried=false;
+        console.log(myName+" is  married "+ismarried);
+        console.log(typeof(ismarried)); 
+
+        //undefined ==
+        var myAge;
+        console.log(myName +" age is "+myAge);
+        console.log(typeof(myAge));
+
+        //null ==
+        var myCity=null;
+        console.log(myName +" city is "+myCity);
+        console.log(typeof(myCity));
+
+        //bigint ==
+        var myNum=12345678901234567890n;
+        console.log("i write random  number "+myNum);
+        console.log(typeof(myNum));
+
+        //symbol - unique primitive data type in JS
+
+        var value1="car ";               //true 
+        var value2="car";
+        console.log(value1==value2); 
+
+         var value1="hello";               //false 
+        var value2="1ello";
+        console.log(value1==value2); 
+
+        console.log(typeof(value1)); 
+        console.log(typeof(value2)); 
+        console.log(typeof(value1) +" and "+typeof(value2));
+
+        //Reference orNon-primitive data type -// mutable and store in heap memory
+
+        //object {} - values are defined  in paired of key-value 
+
+        let myInfo={
+
+            name:"Agrim Singhal",   //STRING value
+            age:19,             //number value
+            city:"Saharanpur", //String value
+            ismarried:false,     //boolean value
+            address:"clock tower saharanpur",     //STRING VALUE 
+            email:"ogagrim7@gmail.com",       //string value
+            section:18,                     //number value
+            branch :"CSE",                          //string value
+        }
+          
+        //All the values of object can be accessed by using dot notation or bracket notation
+        //All the values are wriiten key value pair and separated by comma(,) and the whole object is enclosed in curly braces({})
+        //All the values written inside myinfo ,then curly braces and then assigned to variable myInfo by using var,let or const keyword
+
+        console.log(myInfo.name);
+        console.log(myInfo.age);
+        console.log(myInfo.city);   
+        console.log(myInfo.ismarried);
+        console.log(myInfo.address);    
+        console.log(myInfo.email);
+        console.log(myInfo.section);    
+        console.log(myInfo.branch);
+           
+        console.log(myInfo.address.length); //find length of string value of address key
+        console.log(myInfo.name.toUpperCase()); //to convert string value of name key to uppercase
+
+         console.log(Object.values(myInfo));              //here object is treat as a array and all the values of object are stored in array and then printed on console
+        
+        console.log("object keys length: ", Object.keys(myInfo).length)
+         
+
+        //array [] - values are defined in ordered list and separated by comma(,) and the whole array is enclosed in square brackets([])
+        let myarray=[
+            "Agrim singhal",
+            19,
+            "Saharanpur",
+            false,
+            "clock tower saharanpur",]
+             console.log(myarray[2]); //to access the first value of array
+             console.log(myarray[2].toUpperCase()); 
+             console.log(myarray[4].length); 
+             console.log(myarray.length); //to access the second value of array
+            
+              for(let i=0;i<myarray.length;i++){
+                console.log("the value of i is "+i+" and the value at index "+i+" is "+myarray[i] );
+            }
+
+
+
+        //function - block of code that performs a specific task and can be reused multiple times  
+        //function 0 block of code i.e perform particular any task 
+
+        function myFunc(){
+            let num1=10;
+            let num2=20;
+             let sum=num1+num2;
+             console.log("the sum of "+num1+" and "+num2+" is "+sum);
+            
+        }
+        myFunc(); //to call the function and execute the code inside the function
+           
+>>>>>>> 27a67ca0ed96f71a7eda0de5e0001c5dc65de7e1
 
     </script>
 </body>

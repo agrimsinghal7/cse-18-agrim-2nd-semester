@@ -6,6 +6,7 @@
     <title>JS Object</title>
 </head>
 <body>
+<<<<<<< HEAD
     <script>
         let myInfo={
             name:"Abhay",
@@ -67,5 +68,59 @@
         
         </script>
     
+=======
+   <script>
+    //{} - literal way 
+    let myinfo={
+        name:"Agrim",
+        age:23,
+        email:"ogagrim7@gmail.com",
+        mobileno:9876543210,
+        ismarried:false,
+        address:{
+            GateNumber:3,
+            pincode:247341,
+            Area:"Amba Vihar",
+        },                     //inner object end with closing curly bracket and with comma 
+        course:"B.tech",
+        Section:18,
+        year:2026,
+        
+    }
+    console.log(myinfo)
+    //two types of method of notation to access the value of object
+    console.log(myinfo.address.Area); //dot notation  this is the most common way to access the value of object 
+    console.log(myinfo["address"]["Area"]);//bracket notation
+    console.log(Object.keys(myinfo).length); // count of top-level properties
+    // trying to access .Area on the keys array is wrong — use the object itself
+    console.log(Object.keys(myinfo.address).length); // count of properties inside address
+
+    // length of the string stored in address.Area:
+    console.log(myinfo.address.Area.length); // number of characters in the area name
+
+    // plain objects don’t expose a length property:
+    console.log(myinfo.length); // undefined
+        
+    //find object keys by using Object.keys() method
+    let keys=Object.keys(myinfo); //find object keys by using Object.keys() method
+        console.log(keys.length);
+
+    //delete object property
+     console.log(delete myinfo.name); //deleting the year property from myinfo object 
+    console.log(myinfo); //year property is deleted from myinfo object and it will not be printed on console
+
+    //print object values by using for in loop
+    for(let i=0;i<keys.length;i++)
+    {
+        console.log(keys[i] + ": " + myinfo[keys[i]]); //to print the values of object by using for in loop
+    }
+
+    //print object values by using for of loop
+    for(let x in myinfo)
+    {
+        console.log(x + ": " + myinfo[x]); //to print the values of object by using for of loop
+    }
+   </script>
+>>>>>>> 27a67ca0ed96f71a7eda0de5e0001c5dc65de7e1
 </body>
 </html>
